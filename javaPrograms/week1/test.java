@@ -1,8 +1,8 @@
-public class test {
+public class test{
   public static void main(String[] args)
   {
     int i ;//fdfddfdfcvcvdfgfgfg
-    int j; //eric strong
+    int j; //eric
 
     for(i=0;i<10;i++)
     {
