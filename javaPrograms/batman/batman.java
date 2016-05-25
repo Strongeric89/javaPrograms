@@ -3,6 +3,7 @@ public class batman{
   {
     //running tests
     System.out.println("Im batman!");
+    //int
   }//end main()
 
 }//end class
