@@ -7,4 +7,4 @@ public class exFor {
       System.out.printf("The value of i is %d\n", i );
     }//end for
   }//end main()
-}//end for
+}//end |
