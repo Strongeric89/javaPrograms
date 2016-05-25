@@ -6,6 +6,7 @@ public class test {
     for(i=0;i<10;i++)
     {
     System.out.println("Hello eric!");
+    System.out.println("" + i);
   }
   }//end main()
 
