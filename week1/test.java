@@ -1,7 +1,7 @@
 public class test {
   public static void main(String[] args)
   {
-    int i ;//fdfdf
+    int i ;//fdfdffgkjfgkj
 
     for(i=0;i<10;i++)
     {
