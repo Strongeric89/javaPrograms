@@ -10,7 +10,14 @@ class person{
   }//end sayName
 }//end person
 
+int sum(){
+  for(int i=0;i<10;i++)
+  {
+    num = num + i;
+  }//endfor
+  return num;
 
+}//end sum
 
 public class methodEx{
   public static void main(String [] args)
@@ -24,5 +31,8 @@ public class methodEx{
     eric.name = "Eric Strong";
     eric.sayName();
     laura.sayName();
+    int number=10;
+    int total = sum(number);
+    System.out.println(total);
   }//end main
 }//end clas

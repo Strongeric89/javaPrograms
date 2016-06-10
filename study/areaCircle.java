@@ -10,7 +10,7 @@ public class areaCircle{
 		float pi = 3.14f;
 		//area of a circle is pi X r ^2
 		float areaCircle = pi * rSQ;
-		System.out.printf("The area of a circle is %f", areaCircle); 
+		System.out.printf("The area of a circle is %f", areaCircle);
 	}//end main()
-	
+
 }//end class

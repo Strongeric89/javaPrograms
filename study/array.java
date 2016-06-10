@@ -17,7 +17,7 @@ public class array{
     //or another way using the array.length
   for(int i=0;i<numbers.length;i++)
   {
-    System.out.println("Array element:" + i + "\t Array Value: " + numbers[i] 
+    System.out.println("Array element:" + i + "\t Array Value: " + numbers[i]);
   }//end for2
 
   //float array
