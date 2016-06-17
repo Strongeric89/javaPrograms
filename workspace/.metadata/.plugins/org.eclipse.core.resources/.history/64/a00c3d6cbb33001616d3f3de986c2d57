@@ -1,0 +1,19 @@
+package com.eric;
+import java.util.Scanner;
+import java.util.Random;
+
+public class MatrixChallenge {
+	public static void main(String [] args)
+	{
+		Scanner scan = new Scanner (System.in);
+		Random r = new Random();
+		int randNum = r.nextInt(2);
+		boolean flag = true;
+		while(flag)
+		{
+			System.out.print(randNum);
+		}//end while
+		
+		
+	}//end main
+}//end class

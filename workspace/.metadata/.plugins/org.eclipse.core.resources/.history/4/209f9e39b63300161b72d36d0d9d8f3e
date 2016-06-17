@@ -1,0 +1,16 @@
+/*
+ * the following program will calculate a user specified number Factorial. 
+ * implemented using Methods
+ */
+package com.eric;
+import java.util.Scanner;
+
+public class Factorial {
+	public static void main(String [] args)
+	{
+		Scanner scan = new Scanner (System.in);
+		System.out.println("Please enter a number:");
+		int number = scan.nextInt();
+	}//end main
+
+}//end class

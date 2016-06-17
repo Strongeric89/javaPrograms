@@ -1,0 +1,12 @@
+/*
+ * the Following program is an annual tax calculator
+ */
+package com.eric;
+import java.util.Scanner;
+
+public class AnnualTax {
+	public static void main(String [] args)
+	{
+		Scanner scan = new Scanner(System.in);
+	}//end main
+}

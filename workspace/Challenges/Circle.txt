@@ -1,0 +1,5 @@
+Please enter the Radius of a Circle:
+
+The Circumference of the Circle is 345.4 CM
+The Area of the Circle is 9498.5 CM^sq
+ 

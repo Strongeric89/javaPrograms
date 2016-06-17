@@ -1,0 +1,15 @@
+/*
+ * the following program is implementation of Fibonaci Sequence
+ */
+package com.eric;
+import java.util.Scanner;
+
+
+public class Fibonaci {
+	public static void main(String [] args)
+	{
+		Scanner scan = new Scanner (System.in);
+		int num = scan.nextInt();
+		
+	}//end main
+}

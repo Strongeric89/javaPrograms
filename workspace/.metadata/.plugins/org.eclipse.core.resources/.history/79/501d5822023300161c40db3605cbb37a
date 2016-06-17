@@ -1,0 +1,24 @@
+package com.eric;
+import java.util.Scanner;
+
+public class AreaofCircle {
+	public static void main(String [] args)
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Please enter the Radius of a Circle:");
+		float radius = scan.nextFloat();
+		circumference(radius);
+		
+		
+	}//end main
+	
+	public static float circumference(float radius)
+	{
+		//assume circumference is 2pi r
+		float pi = 3.14f;
+		float cir = (2*pi) * radius;
+		
+		
+	}//end circum
+
+}//end class
