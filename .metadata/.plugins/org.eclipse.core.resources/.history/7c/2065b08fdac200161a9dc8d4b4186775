@@ -1,0 +1,11 @@
+package com.lab3;
+
+/**
+ * @author Eric
+ * Date: 15 Dec 2016
+ * Lab: 3 - employee lab 
+ */
+public class CommissionEmployee
+{
+
+}

@@ -1,9 +1,0 @@
-@echo off
-:A
-class
-echo Message from eric
-set/p n=User
-set/p m=message:
-net send %n%%m%
-pause
-Goto A

@@ -1,0 +1,44 @@
+/*
+ * Lab 2- Objects, and classes and constructors
+ * Author: Eric Strong
+ * Date:
+ */
+package com.lab2;
+
+public class Animal
+{
+	// public attributes
+	static int number =0;
+	String name;
+	String breed;
+	int legs = 0;
+	char domesticated;
+	String colour;
+
+	// constructor 1
+	public Animal(String name)
+	{
+		number ++;
+		this.name = name;
+
+		System.out.printf("\n%d. This Animal's name is %s\n",this.number, this.name);
+
+	}
+
+	// Constructor 2
+	public Animal(String name, String breed, int legs, char dom, String colour)
+	{
+		number ++;
+		this.name = name;
+		this.breed = breed;
+		this.legs = legs;
+		this.domesticated = dom;
+		this.colour = colour;
+
+		System.out.printf(
+				"\n%d. This Animal is a %s, it's name is %s, it has %d legs.\n domesticated:[%c]\n" + "Colour:%s\n",
+				this.number,this.breed, this.name, this.legs, this.domesticated, this.colour);
+
+	}
+
+}// end class

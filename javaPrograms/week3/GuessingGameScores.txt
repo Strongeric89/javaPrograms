@@ -1,8 +1,0 @@
-Eric: Congratulations!! you win!! the number was 82
-Your Score is 30
-It took you 8 attempts to guess!
--------------------------------------------------
-John: Congratulations!! you win!! the number was 76
-Your Score is 20
-It took you 9 attempts to guess!
--------------------------------------------------

@@ -1,0 +1,28 @@
+/*
+ * Lab 2- Objects, and classes and constructors
+ * Author: Eric Strong
+ * Date:
+ */
+package com.lab2;
+
+public class Control
+{
+	public static void main(String[] args)
+	{
+		// creating instance of the class Animal
+		Animal leo = new Animal("Leo");
+
+		// creating second instance of animal
+		Animal spot = new Animal("Spot", "Jackrussel", 4, 'Y', "Brown");
+
+		Animal prince = new Animal("prince");
+		Animal princess = new Animal("princess");
+		Animal banger = new Animal("banger");
+
+		// part 2 encapsulation
+		System.out.println(leo.name);
+		System.out.println(prince.name);
+
+	}// end main
+
+}

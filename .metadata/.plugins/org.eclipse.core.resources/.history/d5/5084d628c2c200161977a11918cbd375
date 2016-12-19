@@ -1,0 +1,40 @@
+/*
+ * Lab 1- Hello World.... boring!
+ * Author: Eric Strong
+ * Date:
+ */
+package com.lab1.test;
+import java.util.Scanner;
+
+
+
+public class HelloWorld {
+	public static void main (String [] args){
+		for(int i=0;i<10;i++){
+			System.out.println((i+1)+". Hello World!, you crazy place!!!");
+		}
+		
+		
+		//part 3
+		getDetails();
+		
+		
+		
+	}//end main
+	
+	public static void getDetails(){
+		
+		//instantiate new vehicle object
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("please enter Owner Details: ");
+		String owner = scan.nextLine();
+		
+		
+		
+		
+	}
+	
+
+
+}//end class
