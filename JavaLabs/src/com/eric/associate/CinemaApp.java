@@ -18,13 +18,8 @@ public class CinemaApp
 	{
 
 		initializeMap(0, 0, 0);
-
 		System.out.println("Welcome to cineworld.");
 		System.out.println("[0] = vacant seat\n[#] = occupied seat\n\n");
-		// for (String i : letters)
-		// System.out.print(" " + i + " ");
-		//
-		// System.out.println("\n=========[Screen]===========");
 		initializeMap(1, 0, 0);
 
 		// select seat
