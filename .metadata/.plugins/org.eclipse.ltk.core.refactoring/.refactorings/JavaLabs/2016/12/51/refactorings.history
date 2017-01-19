@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.vectorLab.Vector&apos; to &apos;ComplexNumber&apos;&#x0D;&#x0A;- Original project: &apos;JavaLabs&apos;&#x0D;&#x0A;- Original element: &apos;com.vectorLab.Vector&apos;&#x0D;&#x0A;- Renamed element: &apos;com.vectorLab.ComplexNumber&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Vector&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.vectorLab{Vector.java[Vector" matchStrategy="1" name="ComplexNumber" qualified="false" references="true" similarDeclarations="false" stamp="1482155909464" textual="false" version="1.0"/>
+</session>

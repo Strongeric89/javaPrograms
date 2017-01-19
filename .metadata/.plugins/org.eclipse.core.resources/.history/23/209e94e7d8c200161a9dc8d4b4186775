@@ -1,6 +1,0 @@
-package com.lab3;
-
-public class HourlyEmployee extends Employee
-{
-
-}
