@@ -1,0 +1,7 @@
+package com.eric.c15708709;
+
+public class Bird extends Animal implements Flyable
+{
+	
+
+}
