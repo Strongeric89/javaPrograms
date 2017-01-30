@@ -155,8 +155,8 @@ public class MyTimetable extends JFrame
 				nowDisplay = "" + hour + ".00";
 				nextDisplay = "" + (hour + 1) + ".00";
 				week1 = "" + (week - 3);
-				min = Math.abs(min - 60);
-				mins = "" + min;
+				// min = Math.abs(min - 60);
+				// mins = "" + min;
 
 				day = day - 1;
 
@@ -188,8 +188,8 @@ public class MyTimetable extends JFrame
 					text4Display = words[3];
 
 					// to get the remaining minutes per class
-					min = Math.abs(min - 60);
-					mins = "" + min;
+					// min = Math.abs(min - 60);
+					// mins = "" + min;
 					// off set of week 4, we start back in 4th week of the year
 					week = week - 3;
 
@@ -225,8 +225,8 @@ public class MyTimetable extends JFrame
 					text4Display = words[3];
 
 					// to get the remaining minutes per class
-					min = Math.abs(min - 60);
-					mins = "" + min;
+					// min = Math.abs(min - 60);
+					// mins = "" + min;
 					// off set of week 4, we start back in 4th week of the year
 					week = week - 3;
 					week1 = "" + week;
@@ -262,8 +262,8 @@ public class MyTimetable extends JFrame
 					text4Display = words[3];
 
 					// to get the remaining minutes per class
-					min = Math.abs(min - 60);
-					mins = "" + min;
+					// min = Math.abs(min - 60);
+					// mins = "" + min;
 					// off set of week 4, we start back in 4th week of the year
 					week = week - 3;
 					week1 = "" + week;
@@ -299,8 +299,8 @@ public class MyTimetable extends JFrame
 					text4Display = words[3];
 
 					// to get the remaining minutes per class
-					min = Math.abs(min - 60);
-					mins = "" + min;
+					// min = Math.abs(min - 60);
+					// mins = "" + min;
 					// off set of week 4, we start back in 4th week of the year
 					week = week - 3;
 					week1 = "" + week;
@@ -336,8 +336,8 @@ public class MyTimetable extends JFrame
 					text4Display = words[3];
 
 					// to get the remaining minutes per class
-					min = Math.abs(min - 60);
-					mins = "" + min;
+					// min = Math.abs(min - 60);
+					// mins = "" + min;
 					// off set of week 4, we start back in 4th week of the year
 					week = week - 3;
 					week1 = "" + week;
@@ -365,10 +365,13 @@ public class MyTimetable extends JFrame
 				 * MAIN PART TO BE DISPLAYED
 				 */
 
-				textField_1.setText(text1Display);
-				textField_2.setText(text2Display);
-				textField_3.setText(text3Display);
-				textField_4.setText(text4Display);
+				min = Math.abs(min - 60);
+				mins = "" + min;
+
+				textField_1.setText(text3Display);
+				textField_2.setText(text4Display);
+				textField_3.setText(text1Display);
+				textField_4.setText(text2Display);
 				textField_5.setText(nextDisplay);
 				textField_6.setText(nowDisplay);
 				textField_7.setText(week1);

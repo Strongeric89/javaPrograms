@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * @author Eric Date: 23 Jan 2017 Lab:
+ */
 public class Arena
 {
 	public static Random r1 = new Random();

@@ -1,0 +1,130 @@
+package com.eric.mytimetable;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JButton;
+import javax.swing.JRadioButton;
+import java.awt.Color;
+
+public class MyTimetable extends JFrame
+{
+
+	private JPanel contentPane;
+	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField textField_3;
+	private JTextField textField_4;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args)
+	{
+		EventQueue.invokeLater(new Runnable()
+		{
+			public void run()
+			{
+				try
+				{
+					MyTimetable frame = new MyTimetable();
+					frame.setVisible(true);
+					// Setting the title of the jframe
+					frame.setTitle("Eric's Timetable App");
+				} catch (Exception e)
+				{
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public MyTimetable()
+	{
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		// sizes of the frame
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		// change this line tothe below so we can easily design our frame.
+		// (null)
+		contentPane.setLayout(null);
+
+		setContentPane(contentPane);
+
+		textField = new JTextField();
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(305, 146, 104, 20);
+		contentPane.add(textField_1);
+		textField_1.setColumns(10);
+		
+		textField_2 = new JTextField();
+		textField_2.setColumns(10);
+		textField_2.setBounds(305, 200, 104, 20);
+		contentPane.add(textField_2);
+		
+		textField_3 = new JTextField();
+		textField_3.setColumns(10);
+		textField_3.setBounds(176, 146, 104, 20);
+		contentPane.add(textField_3);
+		
+		textField_4 = new JTextField();
+		textField_4.setColumns(10);
+		textField_4.setBounds(176, 200, 104, 20);
+		contentPane.add(textField_4);
+		
+		JLabel lblClassNow = new JLabel("Class Now");
+		lblClassNow.setBounds(175, 130, 105, 14);
+		contentPane.add(lblClassNow);
+		
+		JLabel lblClassNext = new JLabel("Class Next");
+		lblClassNext.setBounds(304, 130, 105, 14);
+		contentPane.add(lblClassNext);
+		
+		JLabel lblRoomNow = new JLabel("Room Now");
+		lblRoomNow.setBounds(175, 186, 105, 14);
+		contentPane.add(lblRoomNow);
+		
+		JLabel lblClassNext_1 = new JLabel("Class Next");
+		lblClassNext_1.setBounds(304, 186, 105, 14);
+		contentPane.add(lblClassNext_1);
+		
+		JButton btnClickMe = new JButton("Click Me");
+		btnClickMe.setBackground(Color.YELLOW);
+		btnClickMe.setBounds(10, 145, 145, 75);
+		contentPane.add(btnClickMe);
+		
+		JRadioButton rdbtnGroupA = new JRadioButton("Group A");
+		rdbtnGroupA.setBounds(300, 23, 109, 23);
+		contentPane.add(rdbtnGroupA);
+		
+		JRadioButton rdbtnGroupB = new JRadioButton("Group B");
+		rdbtnGroupB.setBounds(300, 49, 109, 23);
+		contentPane.add(rdbtnGroupB);
+		
+		JRadioButton rdbtnGroupC = new JRadioButton("Group C");
+		rdbtnGroupC.setBounds(300, 76, 109, 23);
+		contentPane.add(rdbtnGroupC);
+		
+		JLabel lblDtcSemester = new JLabel("DT211C/2 Semester 2 Timetable");
+		lblDtcSemester.setBounds(24, 27, 243, 14);
+		contentPane.add(lblDtcSemester);
+		
+		JButton btnClear = new JButton("Clear");
+		btnClear.setBackground(Color.YELLOW);
+		btnClear.setBounds(10, 49, 145, 75);
+		contentPane.add(btnClear);
+	}
+}
