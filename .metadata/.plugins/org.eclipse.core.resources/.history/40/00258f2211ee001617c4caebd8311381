@@ -1,0 +1,10 @@
+package com.eric.lab2;
+
+public class ControlApp
+{
+	public static void main(String[] args)
+	{
+		
+	}//end main Method
+
+}//end ControlApp

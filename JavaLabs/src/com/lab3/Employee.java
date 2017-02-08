@@ -1,16 +1,15 @@
-/**
- * @author Eric
- * Date: 15 Dec 2016
- * Lab: 3 Employee, salary lab 
- */
+
 package com.lab3;
 
+/**
+ * @author Eric Strong Date: 8 Feb 2017 Lab 3: ID: C15708709
+ */
 public class Employee
 {
 	// attributes
 	private String firstName;
 	private String lastName;
-	private static int staffNumber = 0;
+	private int staffNumber;
 	private double baseAnnualSalary = 0.00;
 	private String startDate;
 
@@ -88,7 +87,7 @@ public class Employee
 	public String toString()
 	{
 		return "\n\nName:" + this.firstName + " " + this.lastName + "\nEmployee Number:" + this.staffNumber
-				+ "\nSalary:" + this.baseAnnualSalary + "\nStart Date:" + this.startDate;
+				+ "\nSalary:€" + this.baseAnnualSalary + "\nStart Date:" + this.startDate;
 	}
 
 }// end class

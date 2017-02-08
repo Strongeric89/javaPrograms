@@ -389,23 +389,23 @@ public class MyTimetable extends JFrame
 					mapMonday.put(8, new String[]
 					{ "No class", "No class" });
 					mapMonday.put(9, new String[]
-					{ "Free", "Free" });
+					{ "Networking", "Annex 3022" });
 					mapMonday.put(10, new String[]
 					{ "Networking", "Annex 3022" });
 					mapMonday.put(11, new String[]
-					{ "Free", "Free" });
+					{ "Networking lab A", "AU 1005" });
 					mapMonday.put(12, new String[]
-					{ "Free", "Free" });
+					{ "Networking lab A", "AU 1005" });
 					mapMonday.put(13, new String[]
-					{ "Networking", "Annex 3010" });
+					{ "free", "free" });
 					mapMonday.put(14, new String[]
 					{ "Free", "Free" });
 					mapMonday.put(15, new String[]
 					{ "Maths", "Annex 3020" });
 					mapMonday.put(16, new String[]
-					{ "Networking", "Lab AU1005" });
+					{ "Networking", "Lab AU1005 (group B/C)" });
 					mapMonday.put(17, new String[]
-					{ "Networking", "Lab AU1005" });
+					{ "Networking", "Lab AU1005(group B/C)" });
 					mapMonday.put(18, new String[]
 					{ "Finished", "Home" });
 
@@ -433,9 +433,9 @@ public class MyTimetable extends JFrame
 					mapTuesday.put(15, new String[]
 					{ "HCI", "Main B034" });
 					mapTuesday.put(16, new String[]
-					{ "HCI", "Lab Annex 3005" });
+					{ "HCI", "Lab AU1006" });
 					mapTuesday.put(17, new String[]
-					{ "HCI", "Lab Annex 3005" });
+					{ "HCI", "Lab AU1006" });
 					mapTuesday.put(18, new String[]
 					{ "Finished", "No Class" });
 
@@ -458,15 +458,15 @@ public class MyTimetable extends JFrame
 					mapWednesday.put(12, new String[]
 					{ "Web Development", "Annex 3020" });
 					mapWednesday.put(13, new String[]
-					{ "Free", "Free" });
+					{ "Internship", "Main B034" });
 					mapWednesday.put(14, new String[]
 					{ "Free", "Free" });
 					mapWednesday.put(15, new String[]
 					{ "Free", "Free" });
 					mapWednesday.put(16, new String[]
-					{ "Free", "Free" });
+					{ "free", "free" });
 					mapWednesday.put(17, new String[]
-					{ "Free", "Free" });
+					{ "free", "free" });
 					mapWednesday.put(18, new String[]
 					{ "Finished", "No class" });
 
@@ -485,9 +485,9 @@ public class MyTimetable extends JFrame
 					mapThursday.put(10, new String[]
 					{ "Java", "Annex  G027" });
 					mapThursday.put(11, new String[]
-					{ "Java", "Lab Annex 3005" });
+					{ "Java", "Lab Annex 3008" });
 					mapThursday.put(12, new String[]
-					{ "Java", "Lab Annex 3005" });
+					{ "Java", "Lab Annex 3008" });
 					mapThursday.put(13, new String[]
 					{ "Internship", "Main G007" });
 					mapThursday.put(14, new String[]
@@ -516,9 +516,9 @@ public class MyTimetable extends JFrame
 					mapFriday.put(10, new String[]
 					{ "Maths", "Annex 3022" });
 					mapFriday.put(11, new String[]
-					{ "DataBases", "Lab Annex 3008" });
+					{ "DataBases", "Lab Annex 1016" });
 					mapFriday.put(12, new String[]
-					{ "DataBases", "Lab Annex 3008" });
+					{ "DataBases", "Lab Annex 1016" });
 					mapFriday.put(13, new String[]
 					{ "Free", "Free" });
 					mapFriday.put(14, new String[]

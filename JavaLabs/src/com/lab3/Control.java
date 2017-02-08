@@ -1,7 +1,11 @@
 package com.lab3;
 
+import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * @author Eric Strong Date: 8 Feb 2017 Lab:3 ID: C15708709
+ */
 public class Control
 {
 	public static void main(String[] args)
@@ -21,18 +25,22 @@ public class Control
 
 		// part 3
 		Scanner scan = new Scanner(System.in);
-		Employee[] myEmployees = new Employee[6];
-		// get information for 6 employees
+		int size = 4;
+		Employee[] myEmployees = new Employee[size];
+		// get information for size n employees
 
 		for (int i = 0; i < myEmployees.length; i++)
 		{
-			System.out.println("Enter your first Name:");
+			System.out.println("\nWelcome to the Employee Register System.");
+			System.out.println("\nEnter Employees first Name:");
 			String name = scan.next();
-			System.out.println("Enter your Second Name:");
+			System.out.println("\nEnter Employees Second Name:");
 			String surname = scan.next();
-			System.out.println("Enter your Employee Number:");
-			int num = scan.nextInt();
-			System.out.println("Enter your Starting Date:");
+			// give employee a random number
+			Random r = new Random();
+			int num = r.nextInt(100);
+
+			System.out.println("\nEnter Employees Starting Date:(DD/MM/YYYY)");
 			String start = scan.next();
 
 			// let user choose what employee
@@ -46,7 +54,7 @@ public class Control
 				{
 				case 1:
 				{
-					System.out.println("Enter your Salary:");
+					System.out.println("Enter Employee's Salary:");
 					double sal = scan.nextDouble();
 
 					// Create Object
@@ -57,10 +65,10 @@ public class Control
 					break;
 				case 2:
 				{
-					System.out.println("Enter your Hours:");
+					System.out.println("Enter Employee's Hours:");
 					double hours = scan.nextDouble();
 
-					System.out.println("Enter your Rate:");
+					System.out.println("Enter Employee's Hourly Rate:");
 					double rate = scan.nextDouble();
 
 					// Create Object
@@ -71,11 +79,11 @@ public class Control
 
 				case 3:
 				{
-					System.out.println("Enter your Salary:");
+					System.out.println("Enter Employee's Salary:");
 					double sal = scan.nextDouble();
-					System.out.println("Enter your Commision Earned:");
+					System.out.println("Enter Employee's Commision Earned:");
 					double com = scan.nextDouble();
-					Employee emp = new CommissionEmployee(name, surname, num, 0.00, start, com);
+					Employee emp = new CommissionEmployee(name, surname, num, sal, start, com);
 					myEmployees[i] = emp;
 
 				}
@@ -96,7 +104,7 @@ public class Control
 		for (int i = 0; i < myEmployees.length; i++)
 		{
 			System.out.println(myEmployees[i]);
-			System.out.println(myEmployees[i].calculatePay());
+			System.out.printf("Pay total is €%.2f", myEmployees[i].calculatePay());
 		} // end for
 
 	}// end main

@@ -1,0 +1,16 @@
+package com.eric.lab2;
+
+/**
+ * @author Eric Strong Date: 8 Feb 2017 Lab: ID: C15708709
+ */
+public class ControlApp
+{
+	public static void main(String[] args)
+	{
+
+		// create objects
+		Employee e1 = new Employee("Eric", "Strong", 1, 25000.50, "08/02/2017");
+
+	}// end main Method
+
+}// end ControlApp

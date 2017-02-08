@@ -45,10 +45,11 @@
 	<section name="FatJarPackageWizard">
 		<item value="C:\Users\Eric\Documents\GitHub\javaPrograms" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
 		<item value="MyTimetable - MyTimetableGUI" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
-		<item value="C:\Users\Eric\Desktop\EricTimetable.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
+		<item value="C:\Users\Eric\Desktop\EricTimetableGroupA.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
 		<item value="false" key="FatJarPackageWizardPage.ANTSCRIPT_SAVE"/>
 		<item value="1" key="FatJarPackageWizardPage.LIBRARY_HANDLING"/>
 		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\Eric\Desktop\EricTimetableGroupA.jar"/>
 			<item value="C:\Users\Eric\Desktop\EricTimetable.jar"/>
 		</list>
 		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">

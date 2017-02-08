@@ -1,0 +1,19 @@
+package com.eric.lab1;
+
+public class Control
+{
+	public static void main(String[] args)
+	{
+		// instantiate 3 person objects
+		Person p1 = new Person("Eric", 27, true);
+		Person p2 = new Person("Laura");
+		Person p3 = new Person();
+
+		// result in memory addresses because of no toString method
+		System.out.println(p1);
+		System.out.println(p2);
+		System.out.println(p3);
+
+	}// end main
+
+}// end class

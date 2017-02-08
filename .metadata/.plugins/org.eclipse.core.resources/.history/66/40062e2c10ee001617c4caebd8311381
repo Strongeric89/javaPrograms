@@ -1,0 +1,21 @@
+package com.eric.lab2;
+
+/**
+ * @author Eric Strong Date: 8 Feb 2017 Lab: ID: C15708709
+ */
+public class HourlyEmployee extends Employee
+{
+	private double baseAnnualSalary = 0.00;
+	private double hoursWorked;
+	private double hourlyRate;
+
+	public HourlyEmployee(String firstName, String surName, int staffNumber, double baseAnnualSalary, String startDate,
+			double hoursWorked, double hourlyRate)
+	{
+		super(firstName, surName, staffNumber, baseAnnualSalary, startDate);
+		this.hoursWorked = hoursWorked;
+		this.hourlyRate = hourlyRate;
+
+	}// end constructor
+
+}// end HourlyEmployee

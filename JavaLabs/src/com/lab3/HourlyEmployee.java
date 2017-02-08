@@ -1,11 +1,9 @@
-/**
- * @author Eric
- * Date: 15 Dec 2016
- * Lab: 3 - employee, hourlyemployee
- */
 
 package com.lab3;
 
+/**
+ * @author Eric Strong Date: 8 Feb 2017 Lab:3 ID: C15708709
+ */
 public class HourlyEmployee extends Employee
 {
 	// extra attributes
@@ -26,13 +24,14 @@ public class HourlyEmployee extends Employee
 		// pay = hour * rate
 		double total = 0.00;
 		total = this.hoursWorked * this.hourlyRate;
+
 		return total;
 	}
 
 	public String toString()
 	{
 		return "\n\nName:" + getFirstName() + " " + getLastName() + "\nEmployee Number:" + getStaffNumber()
-				+ "\nHourly Rate:" + this.hourlyRate + "\nStart Date:" + getStartDate();
+				+ "\nHourly Rate:€" + this.hourlyRate + "\nStart Date:" + getStartDate();
 	}
 
 }
