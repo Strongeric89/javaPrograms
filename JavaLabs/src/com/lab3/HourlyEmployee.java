@@ -30,8 +30,12 @@ public class HourlyEmployee extends Employee
 
 	public String toString()
 	{
-		return "\n\nName:" + getFirstName() + " " + getLastName() + "\nEmployee Number:" + getStaffNumber()
-				+ "\nHourly Rate:€" + this.hourlyRate + "\nStart Date:" + getStartDate();
+		// returning the super toString and extra info
+		return super.toString() + "\nHourly Rate:€" + this.hourlyRate;
+		// return "\n\nName:" + getFirstName() + " " + getLastName() +
+		// "\nEmployee Number:" + getStaffNumber()
+		// + "\nHourly Rate:€" + this.hourlyRate + "\nStart Date:" +
+		// getStartDate();
 	}
 
 }

@@ -86,8 +86,16 @@ public class Employee
 
 	public String toString()
 	{
-		return "\n\nName:" + this.firstName + " " + this.lastName + "\nEmployee Number:" + this.staffNumber
-				+ "\nSalary:€" + this.baseAnnualSalary + "\nStart Date:" + this.startDate;
+		String reference = "\n\nName:" + this.firstName + " " + this.lastName + "\nEmployee Number:" + this.staffNumber
+				+ "\nStart Date:" + this.startDate;
+
+		if (this.baseAnnualSalary > 0.00)
+		{
+
+			reference += "\nSalary:€" + this.baseAnnualSalary;
+		}
+
+		return reference;
 	}
 
 }// end class

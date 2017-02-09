@@ -24,8 +24,11 @@ public class CommissionEmployee extends Employee
 
 	public String toString()
 	{
-		return "\n\nName:" + getFirstName() + " " + getLastName() + "\nEmployee Number:" + getStaffNumber()
-				+ "\nCommission Earned:€" + this.commissionEarned + "\nStart Date:" + getStartDate();
+		return super.toString() + "\nCommission Earned:€" + this.commissionEarned;
+		// return "\n\nName:" + getFirstName() + " " + getLastName() +
+		// "\nEmployee Number:" + getStaffNumber()
+		// + "\nCommission Earned:€" + this.commissionEarned + "\nStart Date:" +
+		// getStartDate();
 	}
 
 }
