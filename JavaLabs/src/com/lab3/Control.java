@@ -10,9 +10,9 @@ public class Control
 {
 	public static void main(String[] args)
 	{
-		// String first, String second, int staff, double sal, String start)
-		// Employee eric = new Employee("Eric", "Strong", 1, 2500.00, "January
-		// 2008");
+		// // String first, String second, int staff, double sal, String start)
+		// Employee eric = new Employee("Eric", "Strong", 1, 2500.00,
+		// "January2008");
 		// System.out.println(eric);
 		//
 		// HourlyEmployee laura = new HourlyEmployee("Laura", "Bermingham", 2,
@@ -25,7 +25,7 @@ public class Control
 
 		// part 3
 		Scanner scan = new Scanner(System.in);
-		int size = 4;
+		int size = 3;
 		Employee[] myEmployees = new Employee[size];
 		// get information for size n employees
 

@@ -1,0 +1,89 @@
+package com.eric.lab4;
+
+public class Account
+{
+	// attributes
+	private String accountName;
+	private int accountNumber;
+	private String sortCode;
+	private String branchName;
+	private boolean inCredit;
+	private double acctBalance;
+
+	// constructor
+	public Account()
+	{
+
+	}// end constructor
+
+	// methods
+	public void deposit(double deposited)
+	{
+
+		this.acctBalance += deposited;
+		System.out.println("You have deposited €" + deposited + " \nYour new balance is €" + this.acctBalance);
+
+	}
+
+	// getters and setters
+	public String getAccountName()
+	{
+		return accountName;
+	}
+
+	public void setAccountName(String accountName)
+	{
+		this.accountName = accountName;
+	}
+
+	public int getAccountNumber()
+	{
+		return accountNumber;
+	}
+
+	public void setAccountNumber(int accountNumber)
+	{
+		this.accountNumber = accountNumber;
+	}
+
+	public String getSortCode()
+	{
+		return sortCode;
+	}
+
+	public void setSortCode(String sortCode)
+	{
+		this.sortCode = sortCode;
+	}
+
+	public String getBranchName()
+	{
+		return branchName;
+	}
+
+	public void setBranchName(String branchName)
+	{
+		this.branchName = branchName;
+	}
+
+	public boolean isInCredit()
+	{
+		return inCredit;
+	}
+
+	public void setInCredit(boolean inCredit)
+	{
+		this.inCredit = inCredit;
+	}
+
+	public double getAcctBalance()
+	{
+		return acctBalance;
+	}
+
+	public void setAcctBalance(double acctBalance)
+	{
+		this.acctBalance = acctBalance;
+	}
+
+}// end class
