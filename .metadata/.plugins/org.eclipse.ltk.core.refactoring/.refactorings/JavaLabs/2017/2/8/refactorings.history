@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ReadApp.java&apos; to &apos;lab5-CompositionAndFileIO/src/com.eric.lab5&apos;&#x0D;&#x0A;- Original project: &apos;JavaLabs&apos;&#x0D;&#x0A;- Destination element: &apos;lab5-CompositionAndFileIO/src/com.eric.lab5&apos;&#x0D;&#x0A;- Original element: &apos;com.io.ReadApp.java&apos;" description="Copy compilation unit" destination="=lab5-CompositionAndFileIO/src&lt;com.eric.lab5" element1="/src&lt;com.io{ReadApp.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1487793633205" units="1" version="1.0"/>
+</session>

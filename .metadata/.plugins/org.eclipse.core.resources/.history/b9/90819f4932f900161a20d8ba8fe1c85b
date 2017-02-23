@@ -1,0 +1,16 @@
+package com.eric.lab5;
+
+public class Job
+{
+	private double salary;
+	private String role;
+	private int jobID;
+	
+	public Job(double salary, String role, in jobID){
+		this.salary = salary;
+		this.role = role;
+		this.jobID = jobID;
+		
+	}//end constructor
+
+}//end job

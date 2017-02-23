@@ -1,0 +1,22 @@
+package com.eric.lab5;
+
+public class Job
+{
+	private double salary;
+	private String role;
+	private int jobID;
+
+	public Job(double salary, String role, int jobID)
+	{
+		this.salary = salary;
+		this.role = role;
+		this.jobID = jobID;
+
+	}// end constructor
+
+	public String toString()
+	{
+		return "Salary: €" + this.salary + "\nRole: " + this.role + "\nJobID: " + this.jobID;
+	}
+
+}// end job

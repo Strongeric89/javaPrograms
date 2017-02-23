@@ -58,7 +58,7 @@ public class Control
 		 * PART 3 - Interfaces
 		 * 
 		 */
-
+		System.out.println("part 3");
 		a1.getDetails();
 		ca1.getDetails();
 		da1.getDetails();
@@ -72,9 +72,9 @@ public class Control
 		 * 
 		 */
 
+		System.out.println(a1);
 		System.out.println(da1);
 		System.out.println(ca1);
-		System.out.println(a1);
 
 		// TEST CODE HERE FOR DEMONSTRATION.........
 

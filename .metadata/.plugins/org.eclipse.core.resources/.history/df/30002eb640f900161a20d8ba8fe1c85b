@@ -1,0 +1,46 @@
+package com.eric.lab5;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class ReadApp
+{
+	private String filename;
+	public static String[] lines = new String[10];
+
+	public ReadApp(String filename) throws IOException
+	{
+		this.filename = filename;
+
+	}// end constructor
+
+	public void readFile() throws IOException
+	{
+		File file = new File(this.filename);
+		Scanner in = new Scanner(file);
+		int i = 0;
+
+		while (in.hasNextLine())
+		{
+			String line = (i + 1) + ".\t" + in.nextLine();
+			lines[i] = line;
+			System.out.println(line);
+			i++;
+		}
+
+	}// end readFile
+
+	// public void writeFile() throws IOException
+	// {
+	// // writing to a file
+	// String text = "";
+	// int i = 0;
+	// for (int j = 0; j < i; j++)
+	// {
+	// text = lines[j];
+	// // saves file to the parent directory of the project - f5 to refresh
+	// Files.write(Paths.get("./fileName.txt"), text.getBytes());
+	// }
+	// }
+}// end class
