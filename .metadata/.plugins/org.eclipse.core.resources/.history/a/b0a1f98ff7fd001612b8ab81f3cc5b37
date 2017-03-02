@@ -1,0 +1,8 @@
+package com.eric.lab6;
+
+public class Batman
+{
+	public String toString(){
+		return "im batman!";
+	}
+}
