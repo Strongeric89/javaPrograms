@@ -4,12 +4,15 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ReadApp
 {
+	public ArrayList<String> names = new ArrayList<String>();
 	public String filename;
 	public String[] lines = new String[10];
+	public int size = 0;
 
 	public ReadApp(String filename) throws IOException
 	{
@@ -22,15 +25,15 @@ public class ReadApp
 	{
 		File file = new File(filename);
 		Scanner in = new Scanner(file);
-		int i = 0;
 
 		while (in.hasNextLine())
 		{
-			String line = (i + 1) + ".\t" + in.nextLine();
-			lines[i] = line;
-			System.out.println(line);
-			i++;
+			String line = in.nextLine();
+			names.add(line);
+			// System.out.println(line);
+
 		}
+
 		in.close();
 	}// end readFile
 
@@ -49,9 +52,10 @@ public class ReadApp
 
 	}
 
-	public String[] getFileContents()
+	public ArrayList<String> getFileContents()
 	{
-		return this.lines;
+		System.out.println("the array list is empty? :" + names.isEmpty());
+		return this.names;
 	}
 
 	public String toString()
