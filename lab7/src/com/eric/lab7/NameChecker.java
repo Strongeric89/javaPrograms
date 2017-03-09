@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 import com.eric.lab6.ReadApp;
 
 /**
@@ -17,29 +19,45 @@ public class NameChecker
 
 	public static void main(String[] args)
 	{
-		// scanner to get name
-		Scanner scan = new Scanner(System.in);
-
-		System.out.println("Please Enter a name: ");
-		String keyName = scan.next();
-
-		// getnames
-		getNames();
-
-		// uncomment to read contents to prove file has been written over
-		// for (String n : names)
-		// {
-		// System.out.println(n);
-		// }
-
-		// checknames
-		int flag = checkNames(keyName);
-		if (flag == 0)
+		boolean isRunning = true;
+		while (isRunning)
 		{
-			System.out.println(keyName + " was not found in the file");
-		}
 
-		scan.close();
+			// scanner to get name
+			Scanner scan = new Scanner(System.in);
+
+			// System.out.println("Please Enter a name: ");
+			// String keyName = scan.next();
+
+			String keyName = JOptionPane.showInputDialog(null, "enter name:", "Name Checker",
+					JOptionPane.INFORMATION_MESSAGE);
+
+			if (keyName.equalsIgnoreCase("end") || keyName.equalsIgnoreCase("quit"))
+			{
+				isRunning = false;
+				break;
+			}
+
+			// getnames
+			getNames();
+
+			// uncomment to read contents to prove file has been written over
+			// for (String n : names)
+			// {
+			// System.out.println(n);
+			// }
+
+			// checknames
+			int flag = checkNames(keyName);
+			if (flag == 0)
+			{
+				JOptionPane.showMessageDialog(null, keyName + " was not found in the file");
+				System.out.println(keyName + " was not found in the file");
+			}
+
+			scan.close();
+		} // end while
+		JOptionPane.showMessageDialog(null, "End of program");
 
 	}// end main
 
@@ -66,9 +84,10 @@ public class NameChecker
 		// logic to check each name in the array list
 		for (String name : names)
 		{
+
 			if (name.equalsIgnoreCase(key))
 			{
-
+				JOptionPane.showMessageDialog(null, key + " is a person's name in the file");
 				System.out.println(key + " is a person's name in the file");
 				flag = 1;
 				break;
