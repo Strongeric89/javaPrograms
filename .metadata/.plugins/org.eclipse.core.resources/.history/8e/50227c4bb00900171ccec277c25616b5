@@ -1,0 +1,36 @@
+package com.eric.lab8;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Queue;
+import java.util.Set;
+
+public class StructureChecker
+{
+
+	public static void main(String[] args)
+	{
+		ArrayList<String> list = new ArrayList<String>();
+
+		System.out.print("\nList is an instance of ArrayList: ");
+		System.out.print(list instanceof ArrayList);
+
+		System.out.print("\nList is an instance of List: ");
+		System.out.print(list instanceof List);
+
+		System.out.print("\nList is an instance of Collection: ");
+		System.out.print(list instanceof Collection);
+
+		System.out.print("\nList is an instance of Iterable: ");
+		System.out.print(list instanceof Iterable);
+
+		System.out.print("\nList is an instance of Queue: ");
+		System.out.print(list instanceof Queue);
+
+		System.out.print("\nList is an instance of Set: ");
+		System.out.print(list instanceof Set);
+
+	}// end main
+
+}// end class
