@@ -1,0 +1,92 @@
+package com.eric.lab10;
+
+public class Authentication
+{
+	public static char numbers[] =
+	{ '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' };
+
+	private String password1;
+	private String password2;
+	
+
+	public Authentication(String password1, String password2)
+	{
+		this.password1 = password1;
+		this.password2 = password2;
+
+	}// end constructor
+
+	public String passwordCheck()
+	{
+		String warningMessage = "";
+
+		int one = this.password1.length();
+		int two = this.password2.length();
+
+		
+
+		// part 2 - empty fields check
+		// or use .empty()
+		if (one == 0 || two == 0)
+		{
+			warningMessage += "ERROR 1: both password fields must contain characters";
+		}
+
+		// part 2 - character count check
+		if (one < 8 || one > 15 || two < 8 || two > 15)
+		{
+			warningMessage += "ERROR 2: both passwords need to contain more than 8 characters but less than 15 characters ";
+		}
+
+	
+
+		return warningMessage;
+
+	}// end empty check
+	
+	public boolean numberCheck(String password){
+		
+		
+		// part 3 - checker for uppercase or numbers
+	
+		
+		boolean containsNumbers = false;
+	
+
+		for (int i = 0; i < password.length(); i++)
+		{
+
+			for (int j = 0; j < numbers.length; j++)
+			{
+				if(password.charAt(i) == numbers[j]){
+					containsNumbers = true;
+					break;
+				}
+				if(containsNumbers == true){
+					break;
+				}
+
+			} // end inner for
+
+		} // end for
+		
+		return containsNumbers;
+	}//end numberChecker
+	
+	public boolean UpperCheck(String password){
+		boolean hasUpper = false;
+		
+		
+		 if (!password.matches(".*[A-Z].*")){
+			 hasUpper = true;
+		 }//end if
+		
+		
+		return hasUpper;
+	}//end uppercheck
+
+
+	
+	
+
+}// end class

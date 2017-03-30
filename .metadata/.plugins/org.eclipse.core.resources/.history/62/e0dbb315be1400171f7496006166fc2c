@@ -1,0 +1,12 @@
+package com.eric.lab10;
+
+public class Authentication
+{
+	private String password1;
+	private String password2;
+	
+	public Authentication(){
+		
+	}//end constructor
+
+}//end class
